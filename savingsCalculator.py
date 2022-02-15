@@ -17,7 +17,7 @@ target_amount_specified = st.sidebar.selectbox("HOW MUCH DO YOU WANT TO SAVE?",
 target_amount = target_amount_specified
 
 custom_button = st.sidebar.button("ENTER CUSTOMIZED SAVINGS")
-custom_amount = st.sidebar.number_input("ENTER CUSTOMIZED SAVING TARGET(Optional)", 0)
+custom_amount = st.sidebar.number_input("ENTER CUSTOMIZED SAVING TARGET(Optional)", 1,100000000000000000000000000000000000000000000000000000000)
 if custom_amount > 0:
     target_amount = custom_amount
 
