@@ -83,3 +83,12 @@ st.write("You'll have to save " + str('{:,}'.format(savingsPerHour)) + "rs Per H
 
 st.subheader("3. ONE SEC")
 st.write(f"You'll have to save "+ str(savingsperSec) +"rs Per Sec.")
+
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
